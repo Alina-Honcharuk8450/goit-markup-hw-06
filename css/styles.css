@@ -22,27 +22,47 @@ img{
     max-width: 100%;
     height: auto;
 }
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 h1,h2,h3,h4,h5,h6,p{margin: 0;}
 
 
 .container {
-  max-width: 320px;
-  padding: 0 16px;
+  width: 320px;
   margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
-@media screen and (min-width: 768px){
+
+@media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
-@media screen and (min-width: 1158px){
+
+@media screen and (min-width: 1158px) {
   .container {
-    max-width: 1158px;
-    padding: 0 15px;
-  }
-  section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
