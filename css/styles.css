@@ -23,11 +23,6 @@ img{
     height: auto;
 }
 
-.container {
-  max-width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
 
 .visually-hidden {
   position: absolute;
@@ -44,27 +39,27 @@ img{
 
 h1,h2,h3,h4,h5,h6,p{margin: 0;}
 
-
+/* #region container */
 .container {
-  width: 320px;
+  max-width: 320px;
   margin: 0 auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 0 16px;
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+   max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
   }
 }
+/* #endregion container */
+
 
 /* #region heder */
 .page-header{

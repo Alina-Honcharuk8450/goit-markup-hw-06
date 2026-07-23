@@ -16,19 +16,19 @@
     <header class="page-header">
     <div class="container nav-container">
         <nav class="navigation" >
-            <a href="./index.html" class="logo-heder logo">Web<span class="logo-studio">Studio</span></a>
+            <a href="./index.html" class="logo-header logo">Web<span class="logo-studio">Studio</span></a>
             <ul class="nav-list">
-                <li><a href="./index.html" class="nav-link active">Studio</a></li>
-                <li><a href="" class="nav-link">Portfolio</a></li>
-                <li><a href="" class="nav-link">Contacts</a></li>
+                <li><a href="./index.html" class="nav-link active" target="_blank">Studio</a></li>
+                <li><a href="" class="nav-link" target="_blank">Portfolio</a></li>
+                <li><a href="" class="nav-link" target="_blank">Contacts</a></li>
             </ul>
         </nav>
-        <address class="contacts">
+        <address class="nav-address">
             <ul class="contacts-list">
-                <li>
+                <li class="contacts-item">
                     <a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a>
                 </li>
-                <li>
+                <li class="contacts">
                     <a href="tel:+110001111111" class="contacts-link">+11 (000) 111-11-11</a>
                 </li>
             </ul>
@@ -36,33 +36,33 @@
 
 
         <!-- кнопка меню -->
-        <button class="nav-toggle-button" type="button" aria-label="Open mobile menu" aria-expanded="false" aria-controls="nav-panel">
-            <svg class="nav-toggle-icon" width="24" height="24" aria-hidden="true">
+        <button class="nav-toggle-button" type="button" data-menu-open>
+            <svg class="nav-toggle-icon" width="24" height="24" >
                 <use href="./images/icons.svg#icon-menu"></use>
             </svg>
         </button>
 
         <!-- мобильное меню -->
-        <div id="mobile-panel" class="mobile-panel" aria-hidden="true">
-        <div class="mobile-panel-container container" role="dialog" aria-modal="true">
+        <div class="mobile-panel" data-menu>
+        <div class="mobile-panel-container container">
 
-        <button class="mobile-panel-close-button" type="button" aria-label="Close menu">
-            <svg class="mobile-panel-close-icon" width="8" height="8" aria-hidden="true">
+        <button class="mobile-menu-close" type="button" data-menu-close>
+            <svg class="mobile-menu-svg" width="8" height="8" >
                 <use href="./images/icons.svg#icon-close"></use>
             </svg>
         </button>
 
         <!-- Навигация -->
-        <nav class="mobile-panel-nav">
-            <ul class="mobile-panel-nav-list">
-                <li class="mobile-panel-nav-item">
-                    <a class="mobile-panel-link active-page" href="./index.html">Studio</a>
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item">
+                    <a class="mobile-nav-link active" href="./index.html">Studio</a>
                 </li>
-                <li class="mobile-panel-nav-item">
-                    <a class="mobile-panel-link" href="#">Portfolio</a>
+                <li class="mobile-nav-item">
+                    <a class="mobile-nav-link" href="#">Portfolio</a>
                 </li>
-                <li class="mobile-panel-nav-item">
-                    <a class="mobile-panel-link" href="#">Contacts</a>
+                <li class="mobile-nav-item">
+                    <a class="mobile-nav-link" href="#">Contacts</a>
                 </li>
             </ul>
         </nav>
@@ -71,7 +71,7 @@
         <address class="mobile-panel-contacts">
             <ul class="mobile-contacts-list">
                 <li class="mobile-contacts-item">
-                    <a class="mobile-contacts-link active" href="tel:+110001111111">
+                    <a class="mobile-contacts-link mobile-address-link" href="tel:+110001111111">
                         +11 (000) 111-11-11
                     </a>
                 </li>
@@ -84,7 +84,7 @@
         </address>
 
         <!-- Социальные сети -->
-        <div class="mobile-panel-socials">
+        <div class="mobile-socials">
             <ul class="mobile-socials-list">
                 <li class="mobile-socials-item">
                     <a class="mobile-socials-link" href="#">
@@ -121,17 +121,18 @@
     </div>
     </header>
 
+
     <main>
         <section class="hero">
-            <div class="container">
+            <div class="container hero-container">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
-            <button class="hero-button" type="button">Order Service</button>
+            <button class="hero-button" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
 
         <section class="features">
         <div class="container">
-            <h2 class="visually-hidden">.</h2>
+            <h2 class="visually-hidden section-title" >.</h2>
             <ul class="feature-list">
                 <li class="feature-info-item">    
                     <div class="feature-icon">
@@ -183,7 +184,7 @@
             <div class="container">
             <h2 class="our-team">Our Team</h2>
             <ul class="team-list">
-                <li class="team-item">
+                <li class="team-item team-list-item">
                     <img
                     src="./images/mark.jpg"
                     srcset="./images/mark.jpg 1x, ./images/mark-2x.jpg 2x"
@@ -198,28 +199,28 @@
 
                 <ul class="team-socials">
                     <li class="team-social">
-                        <a href="https://www.instagram.com/" target="_blank" class="link">
-                            <svg class="icon team-social-icon" width="16" height="16">
+                        <a href="https://www.instagram.com/" target="_blank" class="social-link">
+                            <svg class="team-social-icon" width="16" height="16">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li> 
                 <li class="team-social">
-                        <a href="https://www.twitter.com/" target="_blank" class="link">
-                            <svg class="icon team-social-icon" width="16" height="16">
+                        <a href="https://www.twitter.com/" class="social-link">
+                            <svg class="team-social-icon" width="16" height="16">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="team-social">
-                        <a href="https://www.facebook.com/" target="_blank" class="link">
+                        <a href="https://www.facebook.com/" class="social-link">
                             <svg class="icon team-social-icon" width="16" height="16">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li><li class="team-social">
-                        <a href="https://www.linkedin.com/" target="_blank" class="link">
-                            <svg class="icon team-social-icon" width="16" height="16">
+                        <a href="https://www.linkedin.com/" class="social-link">
+                            <svg class="team-social-icon" width="16" height="16">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
                         </a>
@@ -229,7 +230,7 @@
                 </li>
 
 
-                <li class="team-item">
+                <li class="team-item team-list-item">
                     <img
                     src="./images/tom.jpg"
                     srcset="./images/tom.jpg 1x, ./images/tom-2x.jpg 2x"
@@ -242,27 +243,27 @@
                     <p class="team-role">Frontend Developer</p>
                     <ul class="team-socials">
                     <li class="team-social">
-                        <a href="https://www.instagram.com/" target="_blank" class="link">
+                        <a href="https://www.instagram.com/" class="social-link">
                             <svg class="icon team-social-icon" width="16" height="16">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li> 
                 <li class="team-social">
-                        <a href="https://www.twitter.com/" target="_blank" class="link">
+                        <a href="https://www.twitter.com/" class="social-link">
                             <svg class="icon team-social-icon" width="16" height="16">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="team-social">
-                        <a href="https://www.facebook.com/" target="_blank" class="link">
+                        <a href="https://www.facebook.com/" class="social-link">
                             <svg class="icon team-social-icon" width="16" height="16">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li><li class="team-social">
-                        <a href="https://www.linkedin.com/" target="_blank" class="link">
+                        <a href="https://www.linkedin.com/" class="social-link">
                             <svg class="icon team-social-icon" width="16" height="16">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
@@ -273,7 +274,7 @@
                 </li>
 
 
-                <li class="team-item">
+                <li class="team-item team-list-item">
                     <img
                     src="./images/camila.jpg"
                     srcset="./images/camila.jpg 1x, ./images/camila-2x.jpg 2x"
