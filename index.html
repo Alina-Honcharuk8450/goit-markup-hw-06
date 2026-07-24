@@ -577,14 +577,14 @@
 
   <div class="subscribe-block">
     <p class="subscribe-text">Subscribe</p>
-    <form class="subscribe-form" action="#" novalidate>
+    <form class="subscribe-form">
     <label class="subscribe-label" for="email">
-    <input id="email" class="form-input" type="email" name="email" placeholder="E-mail" required />
+    <input class="form-input" type="email" name="email" placeholder="E-mail"/>
     </label>
 
         <button type="submit" class="subscribe-button">
             Subscribe
-            <svg class="icon subscribe-icon" width="24" height="24" aria-hidden="true">
+            <svg class="subscribe-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-subscribe"></use>
             </svg>
         </button>
@@ -593,10 +593,10 @@
   </div>
 </footer>
 
-    <div class="popup-backdrop popup-active">
+    <div class="popup-backdrop" data-modal>
         <div class="popup-window">
-        <button class="popup-close-button" type="button" aria-label="Close modal">
-            <svg class="popup-close-svg" width="8" height="8" aria-hidden="true" focusable="false">
+        <button class="popup-close-button" type="button" data-modal-close>
+            <svg class="popup-close-svg" width="8" height="8">
                 <use href="./images/icons.svg#icon-close"></use>
             </svg>
         </button>
@@ -614,8 +614,7 @@
             class="modal-form-input"
             type="text"
             name="user-name"
-            required
-            >
+            />
             <svg class="modal-form-icon" width="18" height="24">
             <use href="./images/icons.svg#icon-name"></use>
             </svg>
@@ -631,8 +630,7 @@
             class="modal-form-input"
             type="tel"
             name="user-phone"
-            required
-            >
+            />
             <svg class="modal-form-icon" width="18" height="24">
             <use href="./images/icons.svg#icon-phone"></use>
             </svg>
@@ -648,8 +646,7 @@
             class="modal-form-input"
             type="email"
             name="user-email"
-            required
-            >
+            />
             <svg class="modal-form-icon" width="18" height="24">
             <use href="./images/icons.svg#icon-email"></use>
             </svg>
@@ -675,23 +672,24 @@
             type="checkbox"
             name="user-privacy"
             value="true"
-            required
-            aria-required="true"
           />
         
           <label class="modal-form-checkbox-label" for="user-privacy">
-            <span class="modal-form-custom-checkbox" aria-hidden="true">
+            <span class="modal-form-custom-checkbox">
               <svg class="checkbox-icon" width="10" height="8">
                 <use href="./images/icons.svg#icon-active-checkbox"></use>
               </svg>
             </span>
-        
+            <span>
             I accept the terms and conditions of the
             <a href="#" class="modal-form-link">Privacy Policy</a>
+            </span>
           </label>
         </div>
-        
-        <button type="submit" class="modal-form-submit-button">Send</button>
+
+        <div class="modal-button">
+          <button type="submit" class="modal-form-submit-button">Send</button>
+        </div>
         </form>
         </div>
     </div>
