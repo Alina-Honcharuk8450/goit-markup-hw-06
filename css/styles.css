@@ -75,7 +75,7 @@ p {
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
     padding: 0 15px;
   }
 }
@@ -195,7 +195,7 @@ p {
 
    .navigation .nav-list .nav-link:hover,
    .navigation .nav-list .nav-link:focus,
-   .navigation .nav-link.current {
+   .navigation .nav-link.active {
     color: #404bbf;
   }
 
@@ -470,7 +470,7 @@ p {
 
   @media screen and (min-width: 1158px) {
     .hero {
-      padding-top: 188px;
+    padding-top: 188px;
     padding-bottom: 188px;
     max-width: 1440px;
     background-image: linear-gradient(
@@ -677,7 +677,7 @@ p {
 
    @media screen and (min-width: 1158px) {
     .team {
-       padding-top: 120px;
+      padding-top: 120px;
       padding-bottom: 120px;
     }
 
