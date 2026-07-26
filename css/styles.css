@@ -95,7 +95,7 @@ p {
 /* #endregion container */
 
 
-/* #region heder */
+/* #region header */
 .page-header{
   border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -122,7 +122,7 @@ p {
     letter-spacing: 0.03em;
     text-transform: uppercase;    
 }
-.logo-heder{
+.logo-header{
   padding: 16px 0;
   display: block;
 }
@@ -151,7 +151,7 @@ p {
     display: flex;
     align-items: center;
  }
-  .logo-heder {
+  .logo-header {
     margin-right: 120px;
     padding: 24px 0;
   }
@@ -223,7 +223,7 @@ p {
 
 @media screen and (min-width: 1158px){
  
-  .logo-heder {
+  .logo-header {
     margin-right: 76px;
   }
 
@@ -241,7 +241,7 @@ p {
   }
 }
 
-/* #endregion heder */
+/* #endregion header */
 
 
 /* #region mobile */
@@ -343,7 +343,7 @@ p {
   .mobile-contacts-link {
   font-style: normal;
   }
-  .mobile-contacts-link.mobile-addres-link {
+  .mobile-contacts-link.mobile-address-link {
     color: #4d5ae5;
   }
   .mobile-socials {
@@ -366,7 +366,7 @@ p {
   background-color: #4d5ae5;
   border-radius: 50%;
  }
- .mobile-contacts-link.mobile-socials-icon{
+ .mobile-contacts-link .mobile-socials-icon{
   fill: #f4f4fd;
   display: block;
 }
@@ -391,7 +391,7 @@ p {
           rgba(46, 47, 66, 0.7) ),
                 url();
         background-repeat: no-repeat;
-        background-position: center center;
+        background-position: center;
         background-size: cover;
         margin: 0 auto;
       }
@@ -534,7 +534,7 @@ p {
     margin-bottom: 8px;
    }
 
-   .feature-list .team-role {
+   .feature-list .feature-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -577,7 +577,7 @@ p {
       line-height: 1.2;
     }
 
-    .feature-list .team-role {
+    .feature-list .feature-text {
       font-weight: 400;
     }
 
@@ -613,7 +613,7 @@ p {
     gap: 72px;
    }
 
-   .feature-info-item.team-list-item{
+   .team-item.team-list-item{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     max-width: 264px;
@@ -638,7 +638,7 @@ p {
     margin-bottom: 8px;
    }
 
-   .container-team .team-role {
+   .container-team .feature-text {
     font-weight: 400;
     margin-bottom: 8px;
    }
@@ -651,7 +651,7 @@ p {
     flex-shrink: 0;
    }
 
-   .team-socials .socials-link {
+   .team-socials .social-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -670,7 +670,7 @@ p {
       gap: 64px 24px;
     }
 
-    .feature-info-item.team-list-item {
+    .team-item.team-list-item {
       flex-basis: calc((100% - 24px) / 2);
     }
    }
@@ -749,7 +749,7 @@ p {
     margin-bottom: 8px;
    }
 
-   .container-portfolio .portfolio-type {
+   .container-portfolio .feature-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -809,7 +809,7 @@ p {
       transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .portfolio-thrumb {
+    .portfolio-thumb {
       position: relative;
       overflow: hidden;
     }
@@ -866,6 +866,16 @@ p {
     color: #f4f4fd;
     line-height: 1.5;
     letter-spacing: 0.02em;
+  }
+
+  .subscribe-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+    text-align: center;
   }
 
   .social-title {
@@ -964,6 +974,10 @@ p {
   }
 
   .social-title {
+    text-align: left;
+  }
+
+  .subscribe-text{
     text-align: left;
   }
 
