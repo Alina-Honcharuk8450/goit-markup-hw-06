@@ -1,0 +1,119 @@
+  .team {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    background-color: #f4f4fd;
+    margin: 0 auto;
+   }
+
+   .team-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px;
+   }
+
+   .team-item.team-list-item{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    max-width: 264px;
+   }
+
+   .team-item.team-list-item:last-child {
+    margin-bottom: 0;
+   }
+
+   .container-team {
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: #fff;
+   }
+
+   .container-team .team-name {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.12;
+    margin-bottom: 8px;
+   }
+
+   .container-team .feature-text {
+    font-weight: 400;
+    margin-bottom: 8px;
+   }
+
+   .team-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    flex-shrink: 0;
+   }
+
+   .team-socials .social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+   }
+
+   .team-socials .team-social-icon {
+    fill: #f4f4fd;
+   }
+
+   @media screen and (min-width: 768px) {
+    .team-list {
+      gap: 64px 24px;
+    }
+
+    .team-item.team-list-item {
+      flex-basis: calc((100% - 24px) / 2);
+    }
+   }
+
+   @media screen and (min-width: 1158px) {
+    .team {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+
+    .team-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .team-list-item {
+      flex-basis: calc((100% - 72px) / 4);
+      border-radius: 0 0 4px 4px;
+      overflow: hidden;
+    }
+
+    .team-socials {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      flex-shrink: 0; 
+    }
+
+    .team-socials .social-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #4d5ae5;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .team-socials .social-link:focus,
+    .team-socials .social-link:hover {
+      background-color: #404bbf;
+    }
+   }
