@@ -119,9 +119,10 @@
   background-color: #4d5ae5;
   border-radius: 50%;
  }
- .mobile-contacts-link .mobile-socials-icon{
+ .mobile-socials-link .mobile-socials-icon{
   fill: #f4f4fd;
   display: block;
+  stroke: #f4f4fd;
 }
 
 @media screen and (min-width: 768px) {

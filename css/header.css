@@ -5,7 +5,7 @@
 .nav-container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    
 }
 .nav-list,
 .nav-address {
@@ -93,6 +93,7 @@
    .nav-address {
     font-style: normal;
     display: block;
+    margin-left: auto;
   }
 
    .navigation .nav-list .nav-link:hover,
