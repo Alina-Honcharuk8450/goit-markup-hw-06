@@ -1,10 +1,10 @@
 (() => {
   const refs = {
-    // Додати атрибут data-modal-open на кнопку відкриття
+    // Посилання на кнопку відкриття модального вікна
     openModalBtn: document.querySelector("[data-modal-open]"),
-    // Додати атрибут data-modal-close на кнопку закриття
+    // Посилання на кнопку закриття
     closeModalBtn: document.querySelector("[data-modal-close]"),
-    // Додати атрибут data-modal на бекдроп модалки
+    // Посилання на контейнер модального вікна
     modal: document.querySelector("[data-modal]"),
   };
 
@@ -12,7 +12,7 @@
   refs.closeModalBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
-    // is-open це клас який буде додаватися/забиратися на бекдроп при натисканні на кнопки
+    // Додаємо або прибираємо клас is-open
     refs.modal.classList.toggle("is-open");
   }
 })();
