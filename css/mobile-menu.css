@@ -62,9 +62,11 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .mobile-nav,
-  .mobile-panel-contacts{
-    margin-bottom: auto;
+  .mobile-nav {
+  margin-bottom: auto;
+  }
+  .mobile-panel-contacts {
+    margin-bottom: 48px;
   }
   .mobile-nav-list {
   display: flex;
@@ -79,7 +81,7 @@
   color: #2e2f42;
   }
   .mobile-nav-link.active {
-    color: #404bbf;
+    color:#4d5ae5 ;
   }  
   .mobile-contacts-list {
     display: flex;
@@ -95,6 +97,15 @@
   }
   .mobile-contacts-link {
   font-style: normal;
+
+  .mobile-contacts-link.mobile-address-link {
+  color: #4d5ae5;
+  }
+
+  .mobile-contacts-link[href^="mailto:"] {
+    color: #4d4d55;
+  }
+
   }
   .mobile-contacts-link.mobile-address-link {
     color: #4d5ae5;

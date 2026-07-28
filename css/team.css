@@ -64,7 +64,7 @@
     fill: #f4f4fd;
    }
 
-   @media screen and (min-width: 768px) {
+   @media screen and (min-width: 768px) and (max-width: 1157px) {
     .team .container {
     max-width: 584px;
     }
@@ -88,11 +88,12 @@
     .team-list {
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 24px;
     }
 
     .team-list-item {
-      flex-basis: calc((100% - 72px) / 4);
+      flex-basis: 264px;
       border-radius: 0 0 4px 4px;
       overflow: hidden;
     }
