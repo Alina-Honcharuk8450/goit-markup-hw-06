@@ -96,7 +96,8 @@
     color: #434455;    
   }
   .mobile-contacts-link {
-  font-style: normal;
+  font-style: normal; 
+  }
 
   .mobile-contacts-link.mobile-address-link {
   color: #4d5ae5;
@@ -106,10 +107,6 @@
     color: #4d4d55;
   }
 
-  }
-  .mobile-contacts-link.mobile-address-link {
-    color: #4d5ae5;
-  }
   .mobile-socials {
   display: flex;
   }
