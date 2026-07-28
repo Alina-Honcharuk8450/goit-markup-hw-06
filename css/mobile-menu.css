@@ -101,7 +101,6 @@
   }
   .mobile-socials {
   display: flex;
-  justify-content: center;
   }
   .mobile-socials-list {
     display: flex;    

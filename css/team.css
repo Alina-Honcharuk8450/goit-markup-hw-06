@@ -65,12 +65,17 @@
    }
 
    @media screen and (min-width: 768px) {
+    .team .container {
+    max-width: 584px;
+    }
+
     .team-list {
       gap: 64px 24px;
     }
 
     .team-item.team-list-item {
-      flex-basis: calc((100% - 24px) / 2);
+      width: 264px;
+      flex-basis: 264px;
     }
    }
 
@@ -83,7 +88,6 @@
     .team-list {
       display: flex;
       align-items: center;
-      justify-content: space-between;
       gap: 24px;
     }
 
